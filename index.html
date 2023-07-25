@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Robo Mines</title>
+</head>
+<body>
+  <main class="flex flex-col items-center justify-center gap-8">
+    <div class="mt-10">
+      <h1 class="text-6xl">Robo Mines</h1>
+    </div>
+    <div id="jogada" class="h-64 w-64 border-[1px] border-zinc-800 rounded-md p-2 flex flex-col items-center justify-center text-4xl text-center p-0 m-0">
+    </div>
+    <div>
+      <button id="btn" class="bg-emerald-600 p-4 rounded-md font-semibold text-lg hover:bg-emerald-600/80">Gerar Jogada</button>
+    </div>
+    <div class="flex gap-8">
+      <div class="flex flex-col gap-4 items-center justify-center">
+        <p class="text-xl font-semibold">Vitórias</p>
+        <div class="flex bg-zinc-100 text-zinc-950 h-20 w-20 text-5xl items-center justify-center text-bold">
+          <span id="win">0</span>
+        </div>
+        <button class="bg-emerald-600 hover:bg-emerald-600/80 px-8 py-2 rounded-md" onclick="incWin()">+</button>
+      </div>
+      <div class="flex flex-col gap-4 items-center justify-center">
+        <p class="text-xl font-semibold">Derrotas</p>
+        <div class="flex bg-zinc-100 text-zinc-950 h-20 w-20 text-5xl items-center justify-center text-bold">
+          <span id="lose">0</span>
+        </div>
+        <button class="bg-emerald-600 hover:bg-emerald-600/80 px-8 py-2 rounded-md" onClick="incLose()">+</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
